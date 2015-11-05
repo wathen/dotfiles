@@ -1,0 +1,22 @@
+[color]
+	ui = auto
+[user]
+	name = Michael Wathen
+	email = mwathen@cs.ubc.ca
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[alias]
+	st = status -sb
+	ci = commit
+	co = checkout
+	di = diff
+	br = branch
+	aa = add --all
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --all
+[push]
+	default = upstream
+[merge]
+	defaultToUpstream = true
+	conflictstyle = diff3
